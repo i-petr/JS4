@@ -40,7 +40,7 @@
             function addData() {
                 const name = document.querySelector('input[class = "text_name"]').value
                 const date = document.querySelector('input[class = "text_birthdate"]').value
-                const food = document.querySelector('input[value = "vegetarian"]').checked = true
+                const food = document.querySelector('input[name = "food"]:checked').value
                 const sport = document.querySelector('input[id = "habitsUser1"]').checked
                 const smoke = document.querySelector('input[id = "habitsUser2"]').checked
                 const water = document.querySelector('input[id = "habitsUser3"]').checked              
@@ -67,6 +67,7 @@
                         waterUser.textContent = "Пью воду"
                         list.appendChild(waterUser)
                     }
+
                     if (food === "vegetarian") {
                     document.querySelector('p[class = "text"]').innerHTML = `${name} ${date} Вегетарианец`
                     }
