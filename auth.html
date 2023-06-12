@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS4
+        </title>
+        <link rel="stylesheet" href="lk1.css">
+        <link rel="stylesheet" href="lk2.css">
+    </head>
+    <body>
+        <h1>Личный кабинет</h1>
+        <div class = "block" id = "data_form">
+            
+            <input id = 'userName' class = "text_name" type = "text" name = "visitor" placeholder = "Имя">
+            <input id = 'userBirthdate' class = "text_birthdate" type = "text" name = "birthdate" placeholder = "Дата рождения">
+            <input class = "radio" type = "radio" name = "food" value = "vegetarian">
+            <p class = "vegan">Вегетарианец</p>
+            <input class = "radio" type = "radio" name = "food" value = "meat-eater">
+            <p class = "meat">Мясоед</p>
+            <h2>Привычки</h2>
+            <input id = "habitsUser1" class = "checkbox" type = "checkbox" value = "sport">
+            <p class = "sport">Занимаюсь спортом</p>
+            <input id = "habitsUser2" class = "checkbox" type = "checkbox" value = "smoke">
+            <p class = "smoke">Курю</p>
+            <input id= "habitsUser3" class = "checkbox" type = "checkbox" value = "drink_water">
+            <p class = "water">Пью воду</p>
+            <button id = "save" class="lk1" type = "button" >Сохранить</button>
+        </div>
+        <div class="block_edit">
+            <p class = "text" id = "name_date"></p>
+                <h2>Привычки:</h2>
+                <ul class = "list"></ul>
+            <button type = "button" name="edit">Редактировать</button>
+        </div>
+        <script>
+            
+            const saveData = document.querySelector('button[id = "save"]')
+            saveData.addEventListener('click', addData)
+            
+            function addData() {
+                const name = document.querySelector('input[class = "text_name"]').value
+                const date = document.querySelector('input[class = "text_birthdate"]').value
+                const food = document.querySelector('input[value = "vegetarian"]').checked = true
+                const sport = document.querySelector('input[id = "habitsUser1"]').checked
+                const smoke = document.querySelector('input[id = "habitsUser2"]').checked
+                const water = document.querySelector('input[id = "habitsUser3"]').checked              
+                const list = document.querySelector('ul[class = "list"]')
+                console.log(name , date, food, sport, smoke, water)
+                let toggleBlock = document.querySelector(".block")
+                let toggleBlockEdit = document.querySelector(".block_edit")
+                toggleBlock.classList.toggle("active")
+                toggleBlockEdit.classList.toggle("active")
+
+                function data() {
+                    if (sport == true) {
+                        const sportUser = document.createElement("li")
+                        sportUser.textContent = "Занимаюсь спортом"
+                        list.appendChild(sportUser)
+                    }
+                    if (smoke == true) {
+                        const smokeUser = document.createElement("li")
+                        smokeUser.textContent = "Курю"
+                        list.appendChild(smokeUser)
+                    }
+                    if (water == true) {
+                        const waterUser = document.createElement("li")
+                        waterUser.textContent = "Пью воду"
+                        list.appendChild(waterUser)
+                    }
+                    if (food === "vegetarian") {
+                    document.querySelector('p[class = "text"]').innerHTML = `${name} ${date} Вегетарианец`
+                    }
+                    else {
+                        document.querySelector('p[class = "text"]').innerHTML = `${name} ${date} Мясоед` 
+                    }
+                }
+
+                
+
+                data()
+
+                document.querySelector('input[class = "text_name"]').value = ""
+                document.querySelector('input[class = "text_birthdate"]').value = ""
+            }
+
+            
+            
+            const editData = document.querySelector('button[name = "edit"]')
+            editData.addEventListener('click', getData)
+
+            function getData() {
+                let toggleBlockRemove = document.querySelector(".block")
+                let toggleBlockEditRemove = document.querySelector(".block_edit")
+                toggleBlockRemove.classList.remove("active")
+                toggleBlockEditRemove.classList.remove("active")
+            }
+            
+        </script>
+    </body>
+</html>

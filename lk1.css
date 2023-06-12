@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000; 
+}
+
+.block {
+    display: flex;
+    height: 100vh;
+}
+
+.block.active {
+    display: none;
+}
+
+h1 {
+    position: absolute;
+    width: 266px;
+    height: 39px;
+    left: 54px;
+    top: 69px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.text_name {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 195px 12px 20px;
+    gap: 10px;
+    position: absolute;
+    width: 370px;
+    height: 53px;
+    left: 54px;
+    top: 165px;
+    border: 1px solid #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+}
+
+.text_birthdate {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 195px 12px 20px;
+    gap: 10px;
+    position: absolute;
+    width: 370px;
+    height: 53px;
+    left: 54px;
+    top: 248px;
+    border: 1px solid #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+}
+
+input[value = "vegetarian"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    top: 340px;
+    left: 54px;
+}
+
+.vegan {
+    position: absolute;
+    top: 340px;
+    left: 105px;
+    margin-top: 3px;
+}
+
+input[value = "meat-eater"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    top: 389px;
+    left: 54px;
+}
+
+.meat {
+    position: absolute;
+    top: 389px;
+    left: 105px;
+    margin-top: 3px;
+}
+
+h2 {
+    position: absolute;
+    width: 125px;
+    height: 29px;
+    left: 54px;
+    top: 456px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 0;
+}
+
+input[value = "sport"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    top: 512px;
+    left: 54px;
+}
+
+input[value = "smoke"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    top: 561px;
+    left: 54px;
+}
+
+input[value = "drink_water"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    top: 610px;
+    left: 54px;
+}
+
+.sport {
+    position: absolute;
+    top: 512px;
+    left: 105px;
+    margin-top: 3px;
+}
+
+.smoke {
+    position: absolute;
+    top: 561px;
+    left: 105px;
+    margin-top: 3px;
+}
+
+.water {
+    position: absolute;
+    top: 610px;
+    left: 105px;
+    margin-top: 3px;
+}
+
+.lk1 {
+    position: absolute;
+    width: 194px;
+    height: 47px;
+    left: 54px;
+    top: 670px;
+    background: #33AB1F;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+.block_edit {
+    display: none;
+}
+
+.block_edit.active {
+    display: flex;
+    height: 100vh;
+}
+
+ul {
+    position: absolute;
+    margin-top: 423px;
+    margin-left: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    
+}
+
+.block_edit h2 {
+    position: absolute;
+    width: 125px;
+    height: 29px;
+    left: 54px;
+    top: 356px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 0;
+}
+
+.text {
+    font-family: 'Inter';
+    font-style: normal;
+    margin-top: 210px;
+    margin-left: 47px;
+}
+.block_edit button {
+    position: absolute;
+    width: 194px;
+    height: 47px;
+    left: 54px;
+    top: 560px;
+    background: #33AB1F;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
