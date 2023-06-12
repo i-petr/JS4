@@ -1,0 +1,1 @@
+https://i-petr.github.io/JS4/auth.html
