@@ -13,7 +13,7 @@
             
             <input id = 'userName' class = "text_name" type = "text" name = "visitor" placeholder = "Имя">
             <input id = 'userBirthdate' class = "text_birthdate" type = "text" name = "birthdate" placeholder = "Дата рождения">
-            <input class = "radio" type = "radio" name = "food" value = "vegetarian">
+            <input class = "radio" type = "radio" name = "food" value = "vegetarian" checked>
             <p class = "vegan">Вегетарианец</p>
             <input class = "radio" type = "radio" name = "food" value = "meat-eater">
             <p class = "meat">Мясоед</p>
@@ -80,8 +80,12 @@
 
                 data()
 
-                document.querySelector('input[class = "text_name"]').value = ""
-                document.querySelector('input[class = "text_birthdate"]').value = ""
+                // document.querySelector('input[class = "text_name"]').value = ""
+                // document.querySelector('input[class = "text_birthdate"]').value = ""
+                // document.querySelector('input[value = "vegetarian"]').checked = true
+                // document.querySelector('input[id = "habitsUser1"]').checked = false
+                // document.querySelector('input[id = "habitsUser2"]').checked = false
+                // document.querySelector('input[id = "habitsUser3"]').checked = false
             }
 
             
@@ -94,6 +98,7 @@
                 let toggleBlockEditRemove = document.querySelector(".block_edit")
                 toggleBlockRemove.classList.remove("active")
                 toggleBlockEditRemove.classList.remove("active")
+                document.querySelector('ul[class = "list"]').innerHTML = ""
             }
             
         </script>
